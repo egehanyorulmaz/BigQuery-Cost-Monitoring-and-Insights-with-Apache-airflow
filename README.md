@@ -25,7 +25,7 @@ Creates a BigQuery client with the google credential path of json file.
 
 **2- BigQueryJobs Class**\
 Inheriting from the BigQuery class and uses the client to list the historical job records and iterates over the jobs
-to extract the following details:\
+to extract the following details:
 
 <ol>
   <li>Job Type (Load or Query)</li>
