@@ -53,7 +53,10 @@ table in the query contributes the same amount of processed bytes, for each quer
 Now, since we know the rough estimate of bytes per table we can use the [BigQuery Pricing based on region and currency](https://cloud.google.com/skus/?currency=USD&filter=bigquery+analysis), and calculate 
 the total cost per query by processing all the data returned by the client. 
 
-The rest of the job is to schedule this code using Apache Airflow! It has already been implemented in this code :).
+The rest of the job is to schedule this code using Apache Airflow! It has already been implemented in this code :). 
+
+To use the code:
+You have to replace your appropriate credentials to XXXXXX in SqlQueryManager.py
 
 
 
