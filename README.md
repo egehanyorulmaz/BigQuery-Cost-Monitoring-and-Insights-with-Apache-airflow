@@ -55,8 +55,8 @@ the total cost per query by processing all the data returned by the client.
 
 The rest of the job is to schedule this code using Apache Airflow! It has already been implemented in this code :). 
 
-To use the code:
-You have to replace your appropriate credentials to XXXXXX in SqlQueryManager.py
+**To use the code:
+You have to replace your appropriate credentials to XXXXXX in SqlQueryManager.py**
 
 
 
