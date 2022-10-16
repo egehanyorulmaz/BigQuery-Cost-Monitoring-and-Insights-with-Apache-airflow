@@ -1,4 +1,4 @@
-## BigQuery Cost Monitoring with Apache Airflow
+## BigQuery Cost Monitoring, Insights and Cost Extraction with Apache Airflow
 
 ### **Problem**
 Thousands of businesses prefer BigQuery as data warehouse in their data pipeline. In the lack of data engineer resources, 
