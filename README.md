@@ -47,7 +47,8 @@ ON t1.x=t2.x`\
 
 So, we can apply the same logic to BigQuery queries and extract the tables inside the query. Then, assuming that every 
 table in the query contributes the same amount of processed bytes, for each query we can calculate the total billed bytes per table.\
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Ctext%7BTotal%20Bytes%20Per%20Table%7D%3D%20%5Cfrac%7B%5Ctext%7BTotal%20Bytes%20Billed%20in%20Query%7D%7D%7B%5Ctext%7BNumber%20of%20Tables%20in%20Query%7D%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0"  width="320" height="47" />
+![image](https://user-images.githubusercontent.com/48676337/196013075-09d120b2-2735-4185-abac-6e9c4fac30da.png)
+
 
 Now, since we know the rough estimate of bytes per table we can use the [BigQuery Pricing based on region and currency](https://cloud.google.com/skus/?currency=USD&filter=bigquery+analysis), and calculate 
 the total cost per query by processing all the data returned by the client. 
