@@ -1,6 +1,6 @@
 ## BigQuery Cost Monitoring with Apache Airflow
 
-###**Problem**
+### **Problem**
 Thousands of businesses prefer BigQuery as data warehouse in their data pipeline. In the lack of data engineer resources, 
 BigQuery Data Transfer Service becomes useful since it offers a variety of sources to integrate to BigQuery like Google 
 Products (Youtube, Google Analytics, Cloud Resources), some AWS products (Redshift, S3), and hundreds of 3rd party 
@@ -11,7 +11,7 @@ you find some articles about query optimization in BigQuery. You gave few bullet
 observe any decrease in the billing. At that point, **this repository comes to play** :)
 
 
-###**Approach and Solution**
+### **Approach and Solution**
 My approach to the problem was to first understand the root cause of the problem. What is the major cost in BigQuery? 
 Is it high because of the queries run by users or automated jobs? What tables and views are contributing to the cost? 
 How do we prioritize the views to optimize?
@@ -41,7 +41,7 @@ sql_metadata library does the following:
 
 **SQL Query**: `SELECT * FROM table1 t1\
 LEFT JOIN table2 t2\
-ON t1.x=t2.x`
+ON t1.x=t2.x`\
 **sql_metadata output:**
 `["table1", "table2"]`
 
